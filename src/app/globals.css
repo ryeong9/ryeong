@@ -25,6 +25,9 @@
   --color-secondary: var(--secondary);
   --color-surface: var(--surface);
 
+  /* 폰트 */
+  --font-sans: var(--font-pretendard);
+
   /* 브레이크포인트 정의 */
   --breakpoint-sm: 640px;
   --breakpoint-md: 768px;
@@ -35,4 +38,5 @@
 body {
   background: var(--background);
   color: var(--foreground);
+  font-family: var(--font-sans);
 }
