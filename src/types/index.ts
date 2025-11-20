@@ -4,3 +4,8 @@ export type ButtonProps = {
   icon?: React.ReactNode;
   iconPosition?: 'top' | 'left';
 };
+
+export type InfoCardProps = {
+  title: string;
+  children: React.ReactNode;
+};
