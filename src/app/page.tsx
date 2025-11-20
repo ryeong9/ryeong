@@ -1,5 +1,6 @@
 import Education from '@/components/home/education';
 import Profile from '@/components/home/profile';
+import Skills from '@/components/home/skills';
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
         <Profile />
         <Education />
       </section>
+      <Skills />
     </main>
   );
 }
