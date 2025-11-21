@@ -27,3 +27,11 @@ export type UserType = {
   html_url: string;
   name: string;
 };
+
+export type Day = {
+  date: string;
+  count: number;
+  level: 0 | 1 | 2 | 3 | 4;
+};
+
+export type CalendarMonths = 3 | 6 | 12;
