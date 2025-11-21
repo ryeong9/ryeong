@@ -9,9 +9,9 @@ export default async function Github() {
   const allRepo = await getUserAllRepo();
 
   return (
-    <section className='px-5 md:px-12 py-4 md:py-7 mb-5 border border-border rounded-lg md:rounded-2xl'>
+    <section className='px-5 md:px-12 py-4 md:py-7 mb-5 border border-border rounded-lg md:rounded-2xl card-shadow'>
       <h2 className='text-base md:text-2xl font-semibold mb-2'>Github</h2>
-      <section className='flex px-2 md:px-5 py-2 items-center'>
+      <section className='flex px-2 md:px-5 py-2 items-center border-b border-border mb-2'>
         <div className='flex flex-col items-center py-3'>
           <div className='relative w-11 h-11 md:w-24 md:h-24 lg:w-40 lg:h-40 mb-2 md:mb-4 lg:mb-5'>
             <Image
@@ -30,7 +30,7 @@ export default async function Github() {
         </div>
         <GithubCalendar />
       </section>
-      <ul className='grid grid-cols-1 md:grid-cols-2 px-1 py-2 gap-4 md:gap-9'>
+      <ul className='grid grid-cols-1 md:grid-cols-2 px-1 md:px-5 py-2 md:py-7 gap-4 md:gap-9'>
         {allRepo.map((repo) => (
           <li
             key={repo.id}

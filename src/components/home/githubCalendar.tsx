@@ -23,7 +23,7 @@ export default function GithubCalendar() {
 
   return (
     <section className='w-full py-3 pl-3 sm:pl-6 md:pl-8'>
-      <h1 className='font-medium text-xs md:text-sm lg:text-base mb-2 leading-normal'>
+      <h1 className='w-full text-left pl-2 font-medium text-xs md:text-sm lg:text-base mb-2 leading-normal'>
         contribution
       </h1>
       <GitHubCalendar

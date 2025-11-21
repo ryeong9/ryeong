@@ -40,3 +40,7 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans);
 }
+
+.card-shadow {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+}

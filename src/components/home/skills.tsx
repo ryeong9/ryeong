@@ -8,7 +8,7 @@ import ZustandIcon from '@/assets/icons/zustand.svg';
 
 export default function Skills() {
   return (
-    <div className='px-5 md:px-12 py-4 md:py-7 mb-5 border border-border rounded-lg md:rounded-2xl'>
+    <div className='px-5 md:px-12 py-4 md:py-7 mb-5 border border-border rounded-lg md:rounded-2xl card-shadow'>
       <h2 className='text-base md:text-2xl font-semibold mb-2'>Skills</h2>
       <div className='grid grid-cols-4 gap-x-5 gap-y-4 md:grid-cols-6 lg:grid-cols-8 place-items-center'>
         <AiFillHtml5 className='size-9 md:size-16 text-[#E34F26]' />
