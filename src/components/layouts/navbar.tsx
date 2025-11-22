@@ -1,17 +1,44 @@
 import Image from 'next/image';
-import Button from '../common/button';
+import LinkButton from '../common/LinkButton';
+import ActionButton from '../common/ActionButton';
 
 export default function NavBar() {
   return (
     <div className='hidden fixed md:flex w-full px-16 py-5 justify-between bg-background z-10'>
       <div className='flex px-4 py-1 gap-3 items-center'>
-        <Button variant='navBar'>Home</Button>
-        <Button variant='navBar'>About Me</Button>
-        <Button variant='navBar'>Projects</Button>
+        <LinkButton
+          href='/'
+          variant='navBar'
+        >
+          Home
+        </LinkButton>
+        <LinkButton
+          href='/about'
+          variant='navBar'
+        >
+          About Me
+        </LinkButton>
+        <LinkButton
+          href='/projects'
+          variant='navBar'
+        >
+          Projects
+        </LinkButton>
       </div>
       <div className='flex px-4 gap-3 items-center'>
-        <Button variant='navBar'>Contact</Button>
-        <Button variant='navBar'>Resume</Button>
+        <ActionButton
+          href='mailto:oaoa0728@gmail.com'
+          variant='navBar'
+        >
+          Contact
+        </ActionButton>
+        <ActionButton
+          href=''
+          download={true}
+          variant='navBar'
+        >
+          Resume
+        </ActionButton>
         <div className='relative w-[50px] h-[50px] overflow-hidden'>
           <Image
             src='/profile.jpg'

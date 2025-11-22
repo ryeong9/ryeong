@@ -1,41 +1,48 @@
-import Button from '../common/button';
+import LinkButton from '../common/LinkButton';
 import { AiFillHome } from 'react-icons/ai';
 import { BiMailSend, BiSolidGridAlt, BiSolidUser } from 'react-icons/bi';
 import { CgSoftwareDownload } from 'react-icons/cg';
+import ActionButton from '../common/ActionButton';
 
 export default function FootBar() {
   return (
     <div className='md:hidden fixed bottom-0 w-full flex justify-between px-7 pt-6 pb-8 bg-background'>
-      <Button
+      <LinkButton
+        href='/'
         variant='footBar'
         icon={<AiFillHome className='size-5 sm:size-7' />}
       >
         Home
-      </Button>
-      <Button
+      </LinkButton>
+      <LinkButton
+        href='/about'
         variant='footBar'
         icon={<BiSolidUser className='size-5 sm:size-7' />}
       >
         About
-      </Button>
-      <Button
+      </LinkButton>
+      <LinkButton
+        href='/projects'
         variant='footBar'
         icon={<BiSolidGridAlt className='size-5 sm:size-7' />}
       >
         Projects
-      </Button>
-      <Button
+      </LinkButton>
+      <ActionButton
+        href='mailto:oaoa0728@gmail.com'
         variant='footBar'
         icon={<BiMailSend className='size-5 sm:size-7' />}
       >
         Contact
-      </Button>
-      <Button
+      </ActionButton>
+      <ActionButton
+        href=''
+        download={true}
         variant='footBar'
         icon={<CgSoftwareDownload className='size-5 sm:size-7' />}
       >
         Resume
-      </Button>
+      </ActionButton>
     </div>
   );
 }
