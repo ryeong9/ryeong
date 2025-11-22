@@ -12,7 +12,11 @@ export default async function Github() {
     <section className='px-5 md:px-12 py-4 md:py-7 mb-5 border border-border rounded-lg md:rounded-2xl card-shadow'>
       <h2 className='text-base md:text-2xl font-semibold mb-2'>Github</h2>
       <section className='flex px-2 md:px-5 py-2 items-center border-b border-border mb-2'>
-        <div className='flex flex-col items-center py-3'>
+        <a
+          href={userInfo.html_url}
+          target='_blank'
+          className='flex flex-col items-center py-3'
+        >
           <div className='relative w-11 h-11 md:w-24 md:h-24 lg:w-40 lg:h-40 mb-2 md:mb-4 lg:mb-5'>
             <Image
               src={userInfo.avatar_url}
@@ -27,12 +31,14 @@ export default async function Github() {
             <p className='font-semibold'>{userInfo.name}</p>
             <p className='font-medium text-muted-foreground'>{userInfo.login}</p>
           </div>
-        </div>
+        </a>
         <GithubCalendar />
       </section>
       <ul className='grid grid-cols-1 md:grid-cols-2 px-1 md:px-5 py-2 md:py-7 gap-4 md:gap-9'>
         {allRepo.map((repo) => (
-          <li
+          <a
+            href={repo.html_url}
+            target='_blank'
             key={repo.id}
             className='px-4 md:px-7 py-3 md:py-6 border border-border rounded-lg md:rounded-2xl'
           >
@@ -58,7 +64,7 @@ export default async function Github() {
               )}
               <p>{githubTimeAgo(repo.updated_at)}</p>
             </div>
-          </li>
+          </a>
         ))}
       </ul>
     </section>
