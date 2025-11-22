@@ -1,10 +1,12 @@
 import { ButtonProps } from '@/types';
 
-export default function Button({
+export default function ActionButton({
   children,
   variant = 'navBar',
   icon,
+  download = false,
   iconPosition = 'left',
+  href,
 }: ButtonProps) {
   const variantStyles = {
     navBar:
@@ -15,13 +17,14 @@ export default function Button({
   };
 
   return (
-    <button
-      type='button'
+    <a
+      href={href}
+      download={download}
       className={`rounded-lg cursor-pointer ${variantStyles[variant]}`}
     >
       {icon && iconPosition === 'left' && icon}
       {children}
       {icon && iconPosition === 'top' && icon}
-    </button>
+    </a>
   );
 }

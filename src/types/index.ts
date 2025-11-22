@@ -2,7 +2,9 @@ export type ButtonProps = {
   children: React.ReactNode;
   variant?: 'navBar' | 'footBar' | 'notion';
   icon?: React.ReactNode;
+  download?: boolean;
   iconPosition?: 'top' | 'left';
+  href: string;
 };
 
 export type InfoCardProps = {
