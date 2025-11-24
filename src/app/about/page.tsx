@@ -10,7 +10,7 @@ export default function AboutPage() {
             src='/profile.jpg'
             alt='profile'
             fill={true}
-            sizes='85px'
+            sizes='(min-width: 1024px) 240px, (min-width: 768px) 184px, 85px'
             className='rounded-full object-cover'
             priority
           />
@@ -20,30 +20,27 @@ export default function AboutPage() {
             <span className='mr-3'>👩🏻</span>최성령
           </p>
           <p>
-            {' '}
             <span className='mr-3'>🎂</span>2001.07.28
           </p>
           <p>
-            {' '}
             <span className='mr-3'>🏠</span>서울특별시 강서구
           </p>
           <p>
-            {' '}
             <span className='mr-3'>📧</span>oaoa0728@gmail.com
           </p>
         </div>
       </section>
-      <section className='p-5 md:px-9 lg:px-24 font-semibold'>
-        <h3 className='leading-7 mt-2 md:mt-6 lg:mt-11 mb-4 text-base md:text-xl'>
+      <section className='p-5 md:px-9 lg:px-24'>
+        <h3 className='leading-7 mt-2 md:mt-6 lg:mt-11 mb-4 font-semibold text-base md:text-xl'>
           1. 사용자 경험을 최우선으로 생각합니다.
         </h3>
-        <p className='font-normal leading-9 text-sm md:text-base'>
+        <p className='leading-9 text-sm md:text-base'>
           사용자의 입장에서 웹사이트를 사용하던 경험을 잊지 않고, 개발자가 된 지금도 모든 기능을
           <span className='font-semibold'>“사용자가 불편하지 않을까?”</span>라는 기준으로
           바라봅니다. 작은 UI 하나도 사용자 입장에서 다시 확인하는 편이며, 그래서 UI 구조나 동작을
           설계할 때도 <span className='font-semibold'>가독성과 사용성</span>을 가장 먼저 고려합니다.
         </p>
-        <h3 className='leading-7 mt-11 mb-4 text-base md:text-xl'>
+        <h3 className='leading-7 mt-11 mb-4 font-semibold text-base md:text-xl'>
           2. 천천히 쌓아도 확실하게 이해하며, 모르는 것은 끝까지 파고듭니다.
         </h3>
         <p className='font-normal leading-9 text-sm md:text-base'>
@@ -53,7 +50,9 @@ export default function AboutPage() {
           익혀왔습니다. 모르는 문제가 생기면{' '}
           <span className='font-semibold'>끝까지 파고들어 해결</span>하려고 합니다.
         </p>
-        <h3 className='leading-7 mt-11 mb-4 text-base md:text-xl'>3. 협업과 소통을 좋아합니다.</h3>
+        <h3 className='leading-7 mt-11 mb-4 font-semibold text-base md:text-xl'>
+          3. 협업과 소통을 좋아합니다.
+        </h3>
         <p className='font-normal leading-9 text-sm md:text-base'>
           팀 프로젝트에서는 <span className='font-semibold'>일정과 작업 범위를 명확히 공유</span>
           하며, 서로의 흐름을 깨지 않는 개발을 목표로 합니다. 작은 기능이라도{' '}
