@@ -1,9 +1,13 @@
 import { Project } from '@/types';
 import Image from 'next/image';
+import Link from 'next/link';
 
-export default function ProjectsCard({ img_url, title, skills, period }: Project) {
+export default function ProjectsCard({ img_url, title, skills, period, id }: Project) {
   return (
-    <section className='w-full p-6 border border-border rounded-2xl'>
+    <Link
+      href={`/projects/${id}`}
+      className='w-full p-6 border border-border rounded-2xl'
+    >
       <div className='relative w-full h-28 md:h-48 overflow-hidden rounded-2xl'>
         <Image
           src={img_url}
@@ -17,6 +21,6 @@ export default function ProjectsCard({ img_url, title, skills, period }: Project
         <p className='text-xs md:text-sm text-muted-foreground truncate'>{skills}</p>
         <p className='text-xs md:text-sm text-muted-foreground'>{period}</p>
       </div>
-    </section>
+    </Link>
   );
 }
