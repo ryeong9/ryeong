@@ -45,3 +45,24 @@ export type Project = {
   skills: string;
   period: string;
 };
+
+export type ProjectDetail = {
+  id: string;
+  title: string;
+  notionUrl: string;
+  summary: string;
+  period: string;
+  role: string;
+
+  responsibilities: {
+    title: string;
+    items: string[];
+  }[];
+
+  problemSolving: {
+    title: string;
+    problem: string;
+    solution: string;
+    result: string;
+  }[];
+};
