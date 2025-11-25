@@ -19,7 +19,7 @@ export default function RootLayout({
       lang='ko'
       className={pretendard.variable}
     >
-      <body>
+      <body suppressHydrationWarning={process.env.NODE_ENV === 'development'}>
         <NavBar />
         <div className='px-9 md:px-28 lg:px-58 md:pt-11'>{children}</div>
         <FootBar />
