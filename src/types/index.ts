@@ -39,7 +39,7 @@ export type Day = {
 export type CalendarMonths = 3 | 6 | 12;
 
 export type Project = {
-  id: number;
+  id: string;
   img_url: string;
   title: string;
   skills: string;
