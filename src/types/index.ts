@@ -55,11 +55,13 @@ export type ProjectDetail = {
   role: string;
 
   responsibilities: {
+    id: string;
     title: string;
-    items: string[];
+    items: string;
   }[];
 
   problemSolving: {
+    id: string;
     title: string;
     problem: string;
     solution: string;
