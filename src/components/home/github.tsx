@@ -15,6 +15,7 @@ export default async function Github() {
         <a
           href={userInfo.html_url}
           target='_blank'
+          rel='noopener noreferrer'
           className='flex flex-col items-center py-3'
         >
           <div className='relative w-11 h-11 md:w-24 md:h-24 lg:w-40 lg:h-40 mb-2 md:mb-4 lg:mb-5'>
@@ -39,6 +40,7 @@ export default async function Github() {
           <a
             href={repo.html_url}
             target='_blank'
+            rel='noopener noreferrer'
             key={repo.id}
             className='px-4 md:px-7 py-3 md:py-6 border border-border rounded-lg md:rounded-2xl'
           >
