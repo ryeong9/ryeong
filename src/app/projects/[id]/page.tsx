@@ -13,7 +13,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
   }
 
   return (
-    <main className='pb-32 md:py-27'>
+    <main className='pb-32 md:py-18'>
       <div className='md:border md:border-border md:rounded-2xl md:p-9'>
         <section className='pb-5 border-b border-border md:px-3 md:pt-4 md:pb-10 flex flex-col'>
           <div className='flex justify-between mt-9 md:mt-0 mb-5'>
@@ -42,7 +42,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
           {project.problemSolving.map((problem) => (
             <div
               key={problem.id}
-              className='space-y-4'
+              className='space-y-4 md:space-y-5'
             >
               <h3 className='font-semibold text-sm md:text-[18px]'>{problem.title}</h3>
               <div className='text-sm md:text-base'>

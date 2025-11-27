@@ -17,7 +17,7 @@ export default function ProjectsCard({ img_url, title, skills, period, id }: Pro
         />
       </div>
       <div className='flex flex-col font-semibold gap-y-2 mt-6 lg:mt-3'>
-        <p className='text-[18px] md:text-xl lg:text-2xl'>{title}</p>
+        <p className='text-[18px] md:text-xl'>{title}</p>
         <p className='text-xs md:text-sm text-muted-foreground truncate'>{skills}</p>
         <p className='text-xs md:text-sm text-muted-foreground'>{period}</p>
       </div>

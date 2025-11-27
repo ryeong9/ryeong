@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function AboutPage() {
   return (
-    <main className='pb-28 md:py-24'>
+    <main className='pb-28 md:py-18'>
       <h1 className='md:hidden w-full px-1 py-2 mt-9 mb-5 text-xl font-bold'>About</h1>
       <section className='pb-7 md:pb-10 flex justify-center items-center border-b border-border'>
         <div className='relative w-[85px] md:w-46 lg:w-60 h-[85px] md:h-46 lg:h-60 overflow-hidden'>
