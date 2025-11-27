@@ -1,5 +1,6 @@
 import LinkButton from '@/components/common/LinkButton';
 import Markdown from '@/components/common/Markdown';
+import ResponsibilityItem from '@/components/projects/responsibilityItem';
 import { PROJECT_DETAIL } from '@/data/projectDetail';
 import { RxNotionLogo } from 'react-icons/rx';
 
@@ -33,23 +34,8 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
           </p>
           <p className='font-medium text-xs md:text-base text-muted-foreground'>{project.role}</p>
         </section>
-        <section className='mt-5 p-4'>
-          <h2 className='w-full flex items-center font-semibold text-base md:text-xl mb-4'>
-            <span className='mr-2'>✨</span>담당 파트 요약
-          </h2>
-          <div className='flex flex-col space-y-4'>
-            {project.responsibilities.map((responsibility) => (
-              <div
-                className='py-2 text-sm md:text-[18px]'
-                key={responsibility.id}
-              >
-                <h3 className='font-semibold mb-3'>{responsibility.title}</h3>
-                <Markdown className='leading-8'>{responsibility.items}</Markdown>
-              </div>
-            ))}
-          </div>
-        </section>
-        <section className='mt-6 p-4 bg-surface rounded-lg md:rounded-2xl'>
+        <ResponsibilityItem responsibilities={project.responsibilities} />
+        <section className='mt-5 p-4 bg-surface rounded-lg md:rounded-2xl'>
           <h2 className='w-full font-semibold text-base md:text-xl mb-4'>
             <span className='mr-2'>🧩</span>문제 해결
           </h2>
@@ -63,11 +49,11 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
                 <p className='font-semibold'>[문제]</p>
                 <Markdown>{problem.problem}</Markdown>
               </div>
-              <div>
+              <div className='text-sm md:text-base'>
                 <p className='font-semibold'>[해결]</p>
                 <Markdown>{problem.solution}</Markdown>
               </div>
-              <div>
+              <div className='text-sm md:text-base'>
                 <p className='font-semibold'>[결과]</p>
                 <Markdown>{problem.result}</Markdown>
               </div>
