@@ -1,3 +1,4 @@
+import BackButton from '@/components/common/backButton';
 import LinkButton from '@/components/common/linkButton';
 import Markdown from '@/components/common/markdown';
 import ResponsibilityItem from '@/components/projects/responsibilityItem';
@@ -15,9 +16,10 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
   return (
     <main className='pb-32 md:py-18'>
       <div className='md:border md:border-border md:rounded-2xl md:p-9'>
+        <BackButton />
         <section className='pb-5 border-b border-border md:px-3 md:pt-4 md:pb-10 flex flex-col'>
           <div className='flex justify-between mt-9 md:mt-0 mb-5'>
-            <h1 className='px-1 py-2 text-xl md:text-2xl font-bold'>{project.title}</h1>
+            <h1 className='py-2 text-xl md:text-2xl font-bold'>{project.title}</h1>
             <LinkButton
               href={project.notionUrl}
               variant='notion'
