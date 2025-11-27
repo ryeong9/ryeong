@@ -6,7 +6,7 @@ export default function ProjectsCard({ img_url, title, skills, period, id }: Pro
   return (
     <Link
       href={`/projects/${id}`}
-      className='w-full p-6 border border-border rounded-2xl'
+      className='w-full p-6 border border-border rounded-2xl card-shadow md:hover:scale-[1.02]'
     >
       <div className='relative w-full h-28 md:h-48 overflow-hidden rounded-2xl'>
         <Image
