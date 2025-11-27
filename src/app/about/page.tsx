@@ -5,13 +5,13 @@ export default function AboutPage() {
     <main className='pb-28 md:py-18'>
       <h1 className='md:hidden w-full px-1 py-2 mt-9 mb-5 text-xl font-bold'>About</h1>
       <section className='pb-7 md:pb-10 flex justify-center items-center border-b border-border'>
-        <div className='relative w-[85px] md:w-46 lg:w-60 h-[85px] md:h-46 lg:h-60 overflow-hidden'>
+        <div className='relative w-[85px] md:w-46 lg:w-60 h-[85px] md:h-46 lg:h-60 rounded-full overflow-hidden'>
           <Image
-            src='/profile.jpg'
+            src='/profile.JPG'
             alt='profile'
-            fill={true}
+            fill
             sizes='(min-width: 1024px) 240px, (min-width: 768px) 184px, 85px'
-            className='rounded-full object-cover'
+            className='object-cover'
             priority
           />
         </div>

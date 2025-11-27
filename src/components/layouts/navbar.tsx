@@ -39,13 +39,12 @@ export default function NavBar() {
         >
           Resume
         </ActionButton>
-        <div className='relative w-[50px] h-[50px] overflow-hidden'>
+        <div className='relative w-[50px] h-[50px] rounded-full overflow-hidden'>
           <Image
-            src='/profile.jpg'
+            src='/profile.JPG'
             alt='profile'
-            fill={true}
-            sizes='50px'
-            className='rounded-full object-cover'
+            fill
+            className='object-cover'
             priority
           />
         </div>
