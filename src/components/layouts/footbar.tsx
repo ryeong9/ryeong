@@ -1,8 +1,8 @@
-import LinkButton from '../common/LinkButton';
+import LinkButton from '../common/linkButton';
 import { AiFillHome } from 'react-icons/ai';
 import { BiMailSend, BiSolidGridAlt, BiSolidUser } from 'react-icons/bi';
 import { CgSoftwareDownload } from 'react-icons/cg';
-import ActionButton from '../common/ActionButton';
+import ActionButton from '../common/actionButton';
 
 export default function FootBar() {
   return (

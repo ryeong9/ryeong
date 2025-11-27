@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import Markdown from '../common/Markdown';
+import Markdown from '../common/markdown';
 import { GoTriangleDown, GoTriangleRight } from 'react-icons/go';
 
 export default function ResponsibilityItem({

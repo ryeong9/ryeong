@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import LinkButton from '../common/LinkButton';
-import ActionButton from '../common/ActionButton';
+import LinkButton from '../common/linkButton';
+import ActionButton from '../common/actionButton';
 
 export default function NavBar() {
   return (

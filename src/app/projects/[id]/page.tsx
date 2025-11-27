@@ -1,5 +1,5 @@
-import LinkButton from '@/components/common/LinkButton';
-import Markdown from '@/components/common/Markdown';
+import LinkButton from '@/components/common/linkButton';
+import Markdown from '@/components/common/markdown';
 import ResponsibilityItem from '@/components/projects/responsibilityItem';
 import { PROJECT_DETAIL } from '@/data/projectDetail';
 import { RxNotionLogo } from 'react-icons/rx';
